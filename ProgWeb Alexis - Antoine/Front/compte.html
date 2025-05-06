@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Compte</title>
+    <link rel="stylesheet" href="acceuil.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bienvenue sur votre compte</h1>
+
+      <div id="compte-info" class="info-box">
+        <h2>Informations de votre compte :</h2>
+        <p><strong>Nom d'utilisateur :</strong> <span id="username"></span></p>
+        <p><strong>Email :</strong> <span id="email"></span></p>
+        <p><strong>Mot de passe :</strong> <span id="password"></span></p>
+        <p><strong>Rôle :</strong></p>
+        <ul>
+          <li><strong>Traducteur :</strong> <span id="translator"></span></li>
+          <li><strong>Chef :</strong> <span id="chef"></span></li>
+          <li><strong>Administrateur :</strong> <span id="administrator"></span></li>
+        </ul>
+      </div>
+
+      <button id="modifier-btn" class="btn-modifier">Modifier mes informations</button>
+
+      <form id="modifier-form" class="modifier-form" style="display: none;" method="post" action="/modifierCompte">
+        <h3>Modifier mes informations :</h3>
+
+        <label for="password-modifier">Nouveau mot de passe :</label>
+        <input type="password" id="password-modifier" value="">
+
+        <label for="username-modifier">Nouveau nom d'utilisateur :</label>
+        <input type="text" id="username-modifier" value="">
+
+        <label for="translator-modifier">Traducteur :</label>
+        <select id="translator-modifier">
+          <option value="on">Oui</option>
+          <option value="off">Non</option>
+        </select>
+
+        <label for="chef-modifier">Chef :</label>
+        <select id="chef-modifier">
+          <option value="on">Oui</option>
+          <option value="off">Non</option>
+        </select>
+
+        <label for="administrator-modifier">Administrateur :</label>
+        <select id="administrator-modifier">
+          <option value="on">Oui</option>
+          <option value="off">Non</option>
+        </select>
+
+        <button id="enregistrer-btn" class="btn-enregistrer">Enregistrer les modifications</button>
+      </form>
+
+      <div class="action-buttons">
+        <button id="home-button" class="btn-accueil">Retour à l'accueil</button>
+        <button id="login-button" class="btn-deconnexion">Se déconnecter</button>
+      </div>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="compte.js"></script>
+  </body>
+</html>

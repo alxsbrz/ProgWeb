@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recettes de Cuisine</title>
+    <link rel="stylesheet" href="acceuil.css" />
+  </head>
+  <body>
+    <header>
+      <div id="email_utilisateur">Bonjour, chef cuisinier !</div>
+      <button id="option-compte" onclick="window.location.href='compte.html'">Mon compte</button>
+    </header>
+
+    <div class="card">
+      <h1 class="title">Qu’allez-vous cuisiner aujourd’hui ?</h1>
+      <p class="description">Recherchez une idée, une envie, ou laissez-vous inspirer par nos coups de cœur du moment.</p>
+
+      <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Rechercher une recette, un ingrédient...">
+        <button id="search-button">Rechercher</button>
+      </div>
+
+      <div class="search-results" id="search-results"></div>
+
+      <div class="feature-group">
+        <div class="feature">
+          <h2 class="feature-title">🍝 Recettes familiales</h2>
+          <p class="feature-description">Des plats généreux, testés et approuvés par notre communauté gourmande.</p>
+        </div>
+        <div class="feature">
+          <a href="newrecipies.html" class="button">+ Ajouter ma recette</a>
+        </div>
+        <div class="feature">
+          <h2 class="feature-title">💬 Astuces & Partages</h2>
+          <p class="feature-description">Commentez, notez et découvrez les secrets de cuisine des autres passionnés.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="acceuil.js"></script>
+  </body>
+</html>

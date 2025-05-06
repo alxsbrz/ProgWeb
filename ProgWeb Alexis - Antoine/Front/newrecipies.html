@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nouvelle Recette</title>
+  <link rel="stylesheet" href="acceuil.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Nouvelle Recette</h1>
+    <form id="new-recipie-form" method="post" action="/ajouterRecette">
+      
+      <div class="form-section">
+        <label for="name">Nom de la recette :</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-section">
+        <label for="nameFR">Nom de la recette en français :</label>
+        <input type="text" id="nameFR" name="nameFR" required />
+      </div>
+
+      <div class="form-section">
+        <label for="author">Auteur :</label>
+        <input type="text" id="author" name="author" readonly />
+      </div>
+
+      <div class="form-section">
+        <label for="without">Sans (sélection multiple possible) :</label>
+        <select id="without" name="without" multiple>
+          <option value="Vegetarian">Végétarien</option>
+          <option value="Vegan">Végan</option>
+          <option value="Gluten-free">Sans gluten</option>
+          <option value="Lactose-free">Sans lactose</option>
+        </select>
+      </div>
+
+      <div class="form-section">
+        <h2>Ingrédients</h2>
+        <table id="ingredients-table">
+          <thead>
+            <tr>
+              <th>Quantité</th>
+              <th>Nom</th>
+              <th>Type</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="ingredients-tbody">
+            <tr>
+              <td><input type="text" name="quantity-1" required /></td>
+              <td><input type="text" name="ingredient-name-1" required /></td>
+              <td>
+                <select name="type-1" required>
+                  <option value="Baking">Pâtisserie</option>
+                  <option value="Dairy">Laiterie</option>
+                  <option value="Condiments">Condiments</option>
+                  <option value="Fruits">Fruits</option>
+                  <option value="Vegetables">Légumes</option>
+                  <option value="Meat">Viande</option>
+                  <option value="Seafood">Fruits de mer</option>
+                </select>
+              </td>
+              <td><button type="button" class="remove-ingredient-btn">Supprimer</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="add-ingredient-btn" type="button">Ajouter un ingrédient</button>
+      </div>
+
+      <div class="form-section">
+        <h2>Étapes</h2>
+        <div id="steps-container">
+          <div class="step-container" data-step="1">
+            <input type="text" name="step-1" placeholder="Description de l'étape 1" required />
+            <input type="number" name="timer-1" class="timer-input" min="0" value="0" title="Durée (minutes)" />
+            <span class="timer">Timer: 0 min</span>
+            <button type="button" class="remove-step-btn">Supprimer</button>
+          </div>
+        </div>
+        <button id="add-step-btn" type="button">Ajouter une étape</button>
+      </div>
+
+      <div class="form-section">
+        <label for="imageURL">URL de l'image :</label>
+        <input type="text" id="imageURL" name="imageURL" required />
+      </div>
+
+      <div class="form-section">
+        <label for="originalURL">URL originale :</label>
+        <input type="text" id="originalURL" name="originalURL" required />
+      </div>
+
+      <div class="form-section">
+        <button id="submit-btn" type="submit">Soumettre la recette</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="newrecipies.js"></script>
+</body>
+</html>

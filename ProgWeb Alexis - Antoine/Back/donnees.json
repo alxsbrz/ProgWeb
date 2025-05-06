@@ -1,0 +1,92 @@
+[
+    {
+        "username": "TESTATION",
+        "email": "antoine.blevin@gmail.com",
+        "password": "aaaaaaaa",
+        "role": {
+            "translator": "off",
+            "chef": "off",
+            "administrator": "on"
+        }
+    },
+    {
+        "username": "TEST",
+        "email": "antoine.blevin2@gmail.com",
+        "password": "zzzzzzz",
+        "role": {
+            "translator": "off",
+            "chef": "off",
+            "administrator": "off"
+        }
+    },
+    {
+        "username": "Mrpatate",
+        "email": "patate@gmail.com",
+        "password": "pppppppp",
+        "role": {
+            "translator": "off",
+            "chef": "off",
+            "administrator": "off"
+        }
+    },
+    {
+        "username": "Potatoes",
+        "email": "potatoes@gmail.com",
+        "password": "pppppppp",
+        "role": {
+            "translator": "on",
+            "chef": "off",
+            "administrator": "off"
+        }
+    },
+    {
+        "username": "Potatoe",
+        "email": "potts@gmail.com",
+        "password": "aaaaa",
+        "role": {
+            "translator": "off",
+            "chef": "off",
+            "administrator": "off"
+        }
+    },
+    {
+        "username": "Camarchepas",
+        "email": "Erreur@erreur",
+        "password": "abricot",
+        "role": {
+            "translator": "on",
+            "chef": "on",
+            "administrator": "off"
+        }
+    },
+    {
+        "username": "Mrpatatetest",
+        "email": "antoinetest.blevin@gmail.com",
+        "password": "azazaz",
+        "role": {
+            "translator": "off",
+            "chef": "off",
+            "administrator": "off"
+        }
+    },
+    {
+        "username": "aaaaa",
+        "email": "aaaa@aaaa",
+        "password": "aaaaa",
+        "role": {
+            "translator": "on",
+            "chef": "on",
+            "administrator": "off"
+        }
+    },
+    {
+        "username": "Mimi",
+        "email": "mimi@kyo.com",
+        "password": "kyokyo",
+        "role": {
+            "translator": "off",
+            "chef": "on",
+            "administrator": "on"
+        }
+    }
+]

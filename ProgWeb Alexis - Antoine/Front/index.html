@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="title">Connexion</h1>
+      <form  id="login-form", method="post" action="/login">
+        <input type="email" name="email" placeholder="Adresse email" required />
+        <input type="password" name="password" placeholder="Mot de passe" required />
+        <input type="submit" value="Se connecter" />
+      </form>
+      <p class="switch-link">
+        Pas encore de compte ? <a href="register.html">Inscrivez-vous ici</a>
+      </p>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
